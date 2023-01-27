@@ -1,0 +1,1244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head id="ctl00_ctl00_Head1">
+    <link rel="shortcut icon" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Images/favicon.png"/>
+    
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+	<meta name="description" content="The student and parent portal for the Wazzle Gradebook." />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="The administration and management pages for the Wazzle Gradebook." /><script src="https://kit.fontawesome.com/65a259d37d.js"></script>
+<script src="bruh.js"></script>
+
+    <script>jQuery.noConflict();</script>
+	<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Scripts/Common.js?v=17.6.22194.3"></script>
+<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Scripts/Event.js?v=17.6.22194.3"></script>
+<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Scripts/Json.js?v=17.6.22194.3"></script>
+<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Scripts/Effect.js?v=17.6.22194.3"></script>
+<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Scripts/TabBar.js?v=17.6.22194.3"></script>
+<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Scripts/Dialog.js?v=17.6.22194.3"></script>
+<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Scripts/Timer.js?v=17.6.22194.3"></script>
+<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Scripts/Search.js?v=17.6.22194.3"></script>
+<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Scripts/Watermark.js?v=17.6.22194.3"></script>
+<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Scripts/AdvancedSearch.js?v=17.6.22194.3"></script>
+<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Scripts/Plugins/IconSwitcher.js?v=17.6.22194.3"></script>
+<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Content/Widgets/Search.css?v=17.6.22194.3" />
+<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Scripts/Widgets/Search.js?v=17.6.22194.3"></script>
+<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Scripts/Header.js?v=17.6.22194.3"></script>
+
+    <script type="text/javascript">
+	    var masterPrefix = "ctl00_";
+	    var prefix = masterPrefix + "ContentPlaceHolder_";
+	    var rootPath = "https://gradebook.dadeschools.net/Pinnacle/Gradebook/";
+    </script>
+    
+	<script type="text/javascript" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/InternetViewer/InternetViewer.js?v=17.6.22194.3"></script>
+
+	
+<link href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/bundles/css?v=aHKSZqqhUX0E1bhLiAvLDGskCUW7qrsKegRM2xvHCBM1" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Styles/Base.css?v=17.6.22194.3" />
+<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Styles/TabBar.css?v=17.6.22194.3" />
+<link rel="stylesheet" type="text/css" href="Main.css" />
+<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Styles/Form.css?v=17.6.22194.3" />
+<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Styles/Header.css?v=17.6.22194.3" />
+<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Styles/Nav.css?v=17.6.22194.3" />
+<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Styles/Dialog.css?v=17.6.22194.3" />
+
+	<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/InternetViewer/InternetViewer.css?v=17.6.22194.3" />
+
+	<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/InternetViewer/IVReports.css?v=17.6.22194.3" />
+
+	
+	<style type="text/css">
+		div.grid div.period
+		{
+			float: left;
+			margin-right: 0.5em;
+		}
+
+		div.grid div.row
+		{
+			border-bottom: 1px solid #DDD;
+			margin: 0;
+			overflow: hidden;
+			padding: 0.5em;
+		}
+
+		div.grid a, div.grid a:hover, div.grid a:visited
+		{
+			color: inherit;
+			text-decoration: none;
+		}
+
+		div.grid div.teacher
+		{
+			color: #888;
+		}
+
+		.heading
+		{
+			text-align: center;
+		}
+
+		div h2 span.year
+		{
+			color: #888;
+			float: right;
+		}
+
+		div.term h2
+		{
+			border-bottom: 1px solid #DDD;
+			font-weight: bold;
+			margin-top: 1em;
+			padding: 0.5em;
+		}
+
+		a.letter-container
+		{
+			float: right;
+			margin-left: 1em;
+			overflow: hidden;
+			text-align: center;
+			width: 4em;
+		}
+
+		a.letter-container:hover
+		{
+			background-color: #EEE;
+		}
+
+		div.letter-label
+		{
+			font-size: small;
+			margin-bottom: 0.5em;
+			margin-top: 0.5em;
+		}
+
+		a.letter-container.semester
+		{
+			width: 5em;
+		}
+
+		a.letter-container.semester div.letter
+		{
+			border-color: rgba(0, 0, 0, 0.1);
+			padding-bottom: 0.5em;
+			padding-top: 0.5em;
+		}
+
+		span.course
+		{
+			font-weight: bold;
+		}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Content/font-awesome.min.css?v=17.6.22194.3" />
+
+    <style>
+		.optWrapper .options .opt label {
+		    font-weight: normal;
+		}
+		
+		.SumoSelect > .CaptionCont > span {
+		    display: unset;
+		}
+    </style>
+<title>
+	Grades
+</title></head>
+<body onload="checkCookie()">
+    
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNzAzMjkzMzYyDxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCZg9kFgICAQ9kFgICAQ9kFgRmDxYCHgVzdHlsZQUZYmFja2dyb3VuZC1jb2xvcjojZmZmZmZmO2QCAQ8PFgIeB1Zpc2libGVoZGRkkUPv8/34a/127ZrcVp1cLYAZoLw=" />
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var PageIdPrefix='ctl00_ctl00_ContentPlaceHolder_';var PageContentIdPrefix='ctl00_ctl00_ContentPlaceHolder_ContentPane_';//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AE12C7A5" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAM3ZS2muCldDLf4UaMnOQrrtebAYtBK+g9NUDmf8g8/ivHVLV9dlQchjB1VdJfRe4OsLmyrD9/q4MPbQGpM6CQZHogo+A==" />
+</div>
+	    <input name="ctl00$ctl00$uxStudentId" type="hidden" id="ctl00_ctl00_uxStudentId" value="1312634" />
+        
+
+<script type="text/javascript">
+	var teacherSearchId = '';
+	var teacherSearchBox = 'teacherSearchBox';
+	var headerBarId = 'ctl00_ctl00_PageHeader_headerBar';
+	var siteRoot = "https://gradebook.dadeschools.net/Pinnacle/Gradebook/";
+
+	ShowMessage = function (showLink) {
+		if (showLink === false)
+			$('doNotShowDialog').style["display"] = "none";
+
+		var uxMessageDialog = $('uxMessageDialog');
+		var messageDialog = new Dialog("uxMessageDialog");
+
+		messageDialog.open(uxMessageDialog);
+	};
+
+	SetDoNotShow = function () {
+		this._request = new Json.Request("InternetViewerService.ashx", "DoNotShowMsg");
+		this._request.invoke();
+
+		var messageDialog = new Dialog("uxMessageDialog");
+		messageDialog.close();
+	};
+</script>
+
+<style>
+
+	#header h1, .button-menu i, .refresh-button i, #HeaderRow a:not(.btn) {
+		color: #555;
+	}
+
+	#logoRow h1 {
+		line-height: 50px;
+	}
+
+	.side-bar {
+		height: calc(100vh - 50px);
+		top: 50px;
+	}
+
+	
+	#Main {
+		padding-top: 50px;
+	}
+	
+
+	.TopBar {
+		height: 50px;
+	}
+
+	.logoRow, #header {
+		background-color: #ffffff;
+	}
+
+	.org-branding img {
+		height: 50px;
+	}
+
+	@media only screen and (max-width: 767px) {
+		#header #logoRow img {
+			height: 50px;
+		}
+
+		#header {
+			height: 100px;
+		}
+
+		#header, .side-bar {
+			-webkit-transform: translateY( 0 );
+			-ms-transform: translateY( 0 );
+			transform: translateY( 0 );
+			-webkit-transition: all .25s ease-in-out;
+			-moz-transition: all .25s ease-in-out;
+			-ms-transition: all .25s ease-in-out;
+			-o-transition: all .25s ease-in-out;
+			transition: all .25s ease-in-out;
+		}
+
+		#header.logo-hidden,.side-bar.logo-hidden {
+			-webkit-transform: translateY( -50px );
+			-ms-transform: translateY( -50px );
+			transform: translateY( -50px );
+			transition: all .25s ease-in-out;
+		}
+
+		.logo-hidden img {
+			visibility: hidden;
+		}
+
+		.side-bar {
+			top: 100px;
+		}
+
+		.side-bar.show:not(.logo-hidden) {
+			height: calc(100vh - 100px);
+			transition: all .25s ease-in-out;
+		}
+
+		.side-bar.always-float {
+			height: calc(100vh - 100px);
+		}
+
+		.side-bar.always-float.logo-hidden {
+			height: calc(100vh - 50px);
+		}
+
+		
+		#Main {
+			padding-top: 100px;
+		}
+		
+	}
+</style>
+
+<header id="header" data-mobile="false" class="" aria-hidden="false">
+	<div id="logoRow" class="text-center visible-xs-block">
+		
+			<img class="center-block" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Branding/DadeHeaderLogo.png" alt="Miami-Dade County Public Schools" />
+		
+	</div>
+
+	<div id="ctl00_ctl00_PageHeader_headerBar" class="TopBar" style="background-color:#ffffff;">
+		
+			
+				
+			</a>
+		
+			<a href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/" class="org-branding hidden-xs"><img src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Branding/DadeHeaderLogo.png" alt="Miami-Dade County Public Schools" /></a>
+		
+			<div class="TopLoginHeader">
+				<table id="headerTable" class="hidden-xs">
+					<tr id="HeaderRow">
+						
+					</tr>
+				</table>
+				
+			</div>
+		</div>
+
+	
+</header>
+
+
+	<div class="modal" id="uxSearchDialog" tabindex="-1" role="dialog" aria-labelledby="uxSearchTitle">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+					<h4 class="modal-title" id="uxSearchTitle">Advanced Teacher Search</h4>
+				</div>
+				<div class="modal-body">
+					<div class="searchparams">
+						<div class="row">
+							<div class="form-group col-xs-12 col-sm-4">
+								<input class="form-control" id="uxSearchDialog_LastName" type="text" placeholder="Last name..." aria-label="Last Name" />
+							</div>
+
+							<div class="form-group col-xs-12 col-sm-4">
+								<input class="form-control" id="uxSearchDialog_FirstName" type="text" placeholder="First name..." aria-label="First Name" />
+							</div>
+
+							<div class="form-group col-xs-12 col-sm-4">
+								<select id="uxSchoolList" class="form-control" aria-label="Schools"></select>
+							</div>
+						</div>
+					</div>
+					<div class="searchResults list-group" id="uxSearchResult">
+						<div id="uxInstruction" style="line-height: 17em; height: 100%; text-align: center;">Start typing in the above text boxes to begin searching. </div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	    <section id="Main" class="">
+		    <div id="sideBar" class="side-bar" aria-hidden="false">
+		<div class="list-group menu-list">
+
+				<div class="user-info">
+					<div class="media-left">
+						<div class="round-person-photo" style="background-image: url('https://gradebook.dadeschools.net/Pinnacle/Gradebook/Images/NoPhoto.png')"></div>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">
+							<span><strong>Kevin Fernandez</strong></span>
+								<br/><small>0390959@students.dadeschools.net</small>
+						</h4>
+					</div>
+				</div>
+
+				<section class="">
+						<a role="button" class="list-group-item list-group-item-heading" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/InternetViewer/Default.aspx">
+										<i class="fa-solid fa-house"></i>
+
+							Home
+
+						</a>
+
+				</section>
+				<section class="">
+						<a role="button" class="list-group-item list-group-item-heading" href="#">
+										<i class="fa fa-lg fa-fw fa-search"></i>
+
+							Student Details
+
+						</a>
+
+						<div id="0b098c8dcefb48d3b550a951e402eac0">
+
+
+									<a class="list-group-item " href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/InternetViewer/MissingAndUpcomingAssignments.aspx?Student=1312634">Missing &amp; Upcoming Assignments</a>
+									<a class="list-group-item " href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/InternetViewer/GradeReport.aspx?Student=1312634">Grades</a>
+									<a class="list-group-item " href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/InternetViewer/AttendanceSummary.aspx?Student=1312634">Attendance</a>
+									<a class="list-group-item " href="javascript:Piv.requestCrystalReport(&#39;61156d23-5917-4e42-8a7a-a77f4daba4a4&#39;)">Miami-Dade Paperless Interim</a>
+									<a class="list-group-item " href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/InternetViewer/Subscriptions.aspx?Student=1312634">Notifications</a>
+						</div>
+				</section>
+				<section class="">
+						<a role="button" class="list-group-item list-group-item-heading" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Gradebook/ProfileGeneral.aspx">
+										<i class="fa fa-lg fa-fw fa-cog"></i>
+
+							Options
+
+						</a>
+
+						<div id="5437a943c0fa43b9817ff3477fef48bf">
+
+
+									<a class="list-group-item " href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Gradebook/ProfileGeneral.aspx">My Profile</a>
+						</div>
+				</section>
+				<section class="">
+						<a role="button" class="list-group-item list-group-item-heading" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Logon.aspx?Action=Logout">
+										<i class="fa fa-lg fa-fw fa-sign-out"></i>
+
+							Sign out
+
+						</a>
+
+				</section>
+							<div class="list-group-item footer">
+					<div>Last login: 1/26/2023 7:41:44 PM</div>
+					<div>Wazzle Gradebook</div>
+					<div>Copyright 2016-2021 Wazzle Solutions, LLC. </div>
+					<div>All rights reserved.</div>
+					<div>
+						<img style="transform: scale(0.75)" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Images/CompanyLogo.png" alt="Wazzle Solutions" />
+					</div>
+				</div>
+		</div>
+</div>
+	        
+	<div>
+		<input name="ctl00$ctl00$ContentPlaceHolder$uxStudentId" type="hidden" id="ctl00_ctl00_ContentPlaceHolder_uxStudentId" value="1312634" />
+		<div id="Content">
+			
+	<ol class="breadcrumb">
+		<li><a href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/InternetViewer/Students.aspx?Student=">Main</a></li>
+		<li class="active">Grades</li>
+	</ol>
+
+	<div id="ContentHeader">
+	<div>
+		<h1>
+			<span aria-label="Grades">Grades</span>
+					</h1>
+
+
+			<h1><small><span aria-label="Fernandez, Kevin A.">Fernandez, Kevin A.</span></small></h1>
+
+	</div>
+</div>
+	<div id="ContentMain">
+		
+			<div>
+				<a href="#" class="heading clickable" data-toggle="collapse" data-target="#year2022" aria-expanded="false" aria-controls="Collapse calendar year">
+					<i class="fa fa-fw pull-left" data-collapse="#year2022"></i>
+					<span class="year">2022 - 2023</span>
+				</a>
+				<div id="year2022" class="grid collapse in">
+					
+						<div class="row">
+							<div class="period">1</div>
+							<div style="float: left">
+								<span class="course" onclick="changeGrade(this)" style="cursor: pointer">
+									Fitness Lifestyle Design
+								</span>
+								<div class="teacher">Theodorakidi, Efthymios</div>
+							</div>
+							<div style="float: right">
+								
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39003641&Term=20868176" aria-label="3rd 9-Weeks - Period 1 - Fitness Lifestyle Design">
+										<div class="letter" style="color:#007F00;background-color:#DAF2DA" title="">
+											<div>
+												<div>
+													A
+														<span class="percent">
+															100%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">3rd 9-Weeks</div>
+									</a>
+									
+										</div>
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39003641&Term=20868174" aria-label="2nd 9-Weeks - Period 1 - Fitness Lifestyle Design">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">2nd 9-Weeks</div>
+									</a>
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39003641&Term=20868173" aria-label="1st 9-Weeks - Period 1 - Fitness Lifestyle Design">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">1st 9-Weeks</div>
+									</a>
+									
+							</div>
+							</div>
+						</div>
+					
+						<div class="row">
+							<div class="period">2</div>
+							<div style="float: left">
+								<span class="course" onclick="changeGrade(this)" style="cursor: pointer">
+									Advanced Placement Calculus AB
+								</span>
+								<div class="teacher">Leon, Hector</div>
+							</div>
+							<div style="float: right">
+								
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39604220&Term=20867812" aria-label="3rd 9-Weeks - Period 2 - Advanced Placement Calculus AB">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">3rd 9-Weeks</div>
+									</a>
+									
+										</div>
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39604220&Term=20867810" aria-label="2nd 9-Weeks - Period 2 - Advanced Placement Calculus AB">
+										<div class="letter" style="color:#7F7F00;background-color:#F2F2DA" title="">
+											<div>
+												<div>
+													C
+														<span class="percent">
+															70%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">2nd 9-Weeks</div>
+									</a>
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39604220&Term=20867809" aria-label="1st 9-Weeks - Period 2 - Advanced Placement Calculus AB">
+										<div class="letter" style="color:#7F0000;background-color:#F2DADA" title="">
+											<div>
+												<div>
+													F
+														<span class="percent">
+															58%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">1st 9-Weeks</div>
+									</a>
+									
+							</div>
+							</div>
+						</div>
+					
+						<div class="row">
+							<div class="period">3</div>
+							<div style="float: left">
+								<span class="course" onclick="changeGrade(this)" style="cursor: pointer">
+									Advanced Placement English Literatu
+								</span>
+								<div class="teacher">Bardoutsos, Olga</div>
+							</div>
+							<div style="float: right">
+								
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39604106&Term=20867462" aria-label="3rd 9-Weeks - Period 3 - Advanced Placement English Literatu">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">3rd 9-Weeks</div>
+									</a>
+									
+										</div>
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39604106&Term=20867460" aria-label="2nd 9-Weeks - Period 3 - Advanced Placement English Literatu">
+										<div class="letter" style="color:#007F00;background-color:#DAF2DA" title="">
+											<div>
+												<div>
+													A
+														<span class="percent">
+															100%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">2nd 9-Weeks</div>
+									</a>
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39604106&Term=20867459" aria-label="1st 9-Weeks - Period 3 - Advanced Placement English Literatu">
+										<div class="letter" style="color:#444;background-color:#DDD" title="Incomplete">
+											<div>
+												<div>
+													I
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">1st 9-Weeks</div>
+									</a>
+									
+							</div>
+							</div>
+						</div>
+					
+						<div class="row">
+							<div class="period">4</div>
+							<div style="float: left">
+								<span class="course" onclick="changeGrade(this)" style="cursor: pointer">
+									Advanced Placement Environmental
+								</span>
+								<div class="teacher">Caban Klepac, Jana</div>
+							</div>
+							<div style="float: right">
+								
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39604276&Term=20867637" aria-label="3rd 9-Weeks - Period 4 - Advanced Placement Environmental">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">3rd 9-Weeks</div>
+									</a>
+									
+										</div>
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39604276&Term=20867635" aria-label="2nd 9-Weeks - Period 4 - Advanced Placement Environmental">
+										<div class="letter" style="color:#7F7F00;background-color:#F2F2DA" title="">
+											<div>
+												<div>
+													C
+														<span class="percent">
+															70%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">2nd 9-Weeks</div>
+									</a>
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39604276&Term=20867634" aria-label="1st 9-Weeks - Period 4 - Advanced Placement Environmental">
+										<div class="letter" style="color:#7F7F00;background-color:#F2F2DA" title="">
+											<div>
+												<div>
+													C
+														<span class="percent">
+															74%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">1st 9-Weeks</div>
+									</a>
+									
+							</div>
+							</div>
+						</div>
+					
+						<div class="row">
+							<div class="period">5</div>
+							<div style="float: left">
+								<span class="course" onclick="changeGrade(this)" style="cursor: pointer">
+									Women's Studies
+								</span>
+								<div class="teacher">Torres-Ferna, Liset</div>
+							</div>
+							<div style="float: right">
+								
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=40597589&Term=21617834" aria-label="3rd 9-Weeks - Period 5 - Women's Studies">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">3rd 9-Weeks</div>
+									</a>
+									
+										</div>
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=40597589&Term=21617832" aria-label="2nd 9-Weeks - Period 5 - Women's Studies">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">2nd 9-Weeks</div>
+									</a>
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=40597589&Term=21617831" aria-label="1st 9-Weeks - Period 5 - Women's Studies">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">1st 9-Weeks</div>
+									</a>
+									
+							</div>
+							</div>
+						</div>
+					
+						<div class="row">
+							<div class="period">6</div>
+							<div style="float: left">
+								<span class="course" onclick="changeGrade(this)" style="cursor: pointer">
+									United States Government Honors
+								</span>
+								<div class="teacher">Trainor, John</div>
+							</div>
+							<div style="float: right">
+								
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=40597563&Term=21617827" aria-label="3rd 9-Weeks - Period 6 - United States Government Honors">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">3rd 9-Weeks</div>
+									</a>
+									
+										</div>
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=40597563&Term=21617825" aria-label="2nd 9-Weeks - Period 6 - United States Government Honors">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">2nd 9-Weeks</div>
+									</a>
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=40597563&Term=21617824" aria-label="1st 9-Weeks - Period 6 - United States Government Honors">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">1st 9-Weeks</div>
+									</a>
+									
+							</div>
+							</div>
+						</div>
+					
+						<div class="row">
+							<div class="period">7</div>
+							<div style="float: left">
+								<span class="course" onclick="changeGrade(this)" style="cursor: pointer">
+									Theatre, Cinema, & Film Production
+								</span>
+								<div class="teacher">Timpilis, Dimitrios</div>
+							</div>
+							<div style="float: right">
+								
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=40037310&Term=20966631" aria-label="3rd 9-Weeks - Period 7 - Theatre, Cinema, & Film Production">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">3rd 9-Weeks</div>
+									</a>
+									
+										</div>
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=40037310&Term=20966629" aria-label="2nd 9-Weeks - Period 7 - Theatre, Cinema, & Film Production">
+										<div class="letter" style="color:#3F7F00;background-color:#E6F2DA" title="">
+											<div>
+												<div>
+													B
+														<span class="percent">
+															83%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">2nd 9-Weeks</div>
+									</a>
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=40037310&Term=20966628" aria-label="1st 9-Weeks - Period 7 - Theatre, Cinema, & Film Production">
+										<div class="letter" style="color:#007F00;background-color:#DAF2DA" title="">
+											<div>
+												<div>
+													A
+														<span class="percent">
+															95%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">1st 9-Weeks</div>
+									</a>
+									
+							</div>
+							</div>
+						</div>
+					
+						<div class="row">
+							<div class="period">8</div>
+							<div style="float: left">
+								<span class="course" onclick="changeGrade(this)" style="cursor: pointer">
+									Greek 3 Honors
+								</span>
+								<div class="teacher">Dasteridou, Magdalini</div>
+							</div>
+							<div style="float: right">
+								
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39885034&Term=20868169" aria-label="3rd 9-Weeks - Period 8 - Greek 3 Honors">
+										<div class="letter" style="color:#007F00;background-color:#DAF2DA" title="">
+											<div>
+												<div>
+													A
+														<span class="percent">
+															92%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">3rd 9-Weeks</div>
+									</a>
+									
+										</div>
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39885034&Term=20868167" aria-label="2nd 9-Weeks - Period 8 - Greek 3 Honors">
+										<div class="letter" style="color:#3F7F00;background-color:#E6F2DA" title="">
+											<div>
+												<div>
+													B
+														<span class="percent">
+															82%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">2nd 9-Weeks</div>
+									</a>
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39885034&Term=20868166" aria-label="1st 9-Weeks - Period 8 - Greek 3 Honors">
+										<div class="letter" style="color:#007F00;background-color:#DAF2DA" title="">
+											<div>
+												<div>
+													A
+														<span class="percent">
+															91%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">1st 9-Weeks</div>
+									</a>
+									
+							</div>
+							</div>
+						</div>
+					
+					<div class="heading">Prior Classes for 2022 - 2023</div>
+					
+						<div class="row">
+							<div class="period">1</div>
+							<div style="float: left">
+								<span class="course" onclick="changeGrade(this)" style="cursor: pointer">
+									Personal Fitness
+								</span>
+								<div class="teacher">Theodorakidi, Efthymios</div>
+							</div>
+							<div style="float: right">
+								
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39003595&Term=20868069" aria-label="2nd 9-Weeks - Period 1 - Personal Fitness">
+										<div class="letter" style="color:#007F00;background-color:#DAF2DA" title="">
+											<div>
+												<div>
+													A
+														<span class="percent">
+															92%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">2nd 9-Weeks</div>
+									</a>
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39003595&Term=20868068" aria-label="1st 9-Weeks - Period 1 - Personal Fitness">
+										<div class="letter" style="color:#007F00;background-color:#DAF2DA" title="">
+											<div>
+												<div>
+													A
+														<span class="percent">
+															91%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">1st 9-Weeks</div>
+									</a>
+									
+							</div>
+							</div>
+						</div>
+					
+						<div class="row">
+							<div class="period">5</div>
+							<div style="float: left">
+								<span class="course" onclick="changeGrade(this)" style="cursor: pointer">
+									NC Study Hall 1
+								</span>
+								<div class="teacher">Torres-Ferna, Liset</div>
+							</div>
+							<div style="float: right">
+								
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39737388&Term=20867768" aria-label="2nd 9-Weeks - Period 5 - NC Study Hall 1">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">2nd 9-Weeks</div>
+									</a>
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39737388&Term=20867767" aria-label="1st 9-Weeks - Period 5 - NC Study Hall 1">
+										<div class="letter" style="" title="">
+											<div>
+												<div>
+													
+														<span class="percent">
+															
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">1st 9-Weeks</div>
+									</a>
+									
+							</div>
+							</div>
+						</div>
+					
+						<div class="row">
+							<div class="period">6</div>
+							<div style="float: left">
+								<span class="course" onclick="changeGrade(this)" style="cursor: pointer">
+									Economics with Financial Literacy H
+								</span>
+								<div class="teacher">Trainor, John</div>
+							</div>
+							<div style="float: right">
+								
+								<div style="float: right">
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39812874&Term=20867586" aria-label="2nd 9-Weeks - Period 6 - Economics with Financial Literacy H">
+										<div class="letter" style="color:#7F0000;background-color:#F2DADA" title="">
+											<div>
+												<div>
+													F
+														<span class="percent">
+															45%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">2nd 9-Weeks</div>
+									</a>
+									
+									<a class="letter-container" href="javascript:void(0);" onclick="getCourseURL(this)" course-data="StudentAssignments.aspx?Enrollment=39812874&Term=20867585" aria-label="1st 9-Weeks - Period 6 - Economics with Financial Literacy H">
+										<div class="letter" style="color:#7F0000;background-color:#F2DADA" title="">
+											<div>
+												<div>
+													F
+														<span class="percent">
+															42%
+														</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="letter-label">1st 9-Weeks</div>
+									</a>
+									
+							</div>
+							</div>
+						</div>
+					
+				</div>
+			</div>
+		
+	</div>
+
+			
+			<p class="report-time">
+				This report was generated on 1/26/2023 at 9:07 PM
+			</p>
+		</div>
+	</div>
+	<div aria-labelledby="uxMessageDialogLabel" class="modal" id="uxMessageDialog" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h1 class="modal-title" id="uxMessageDialogLabel">Message Board</h1>
+				</div>
+				<div class="modal-body">
+					<p><!--
+<h4>
+<ul>
+Teachers: new information about Notes and Discipline (pages 32-33):
+<li>
+<a href="http://gradebooksupport.dadeschools.net/pdf/teacher_ref_pinn8.pdf" target="_blank"> New!  Teacher's Reference Manual</a> - updated 04/10/2012 <FONT COLOR="#FF0000"></FONT>
+</li>
+<br>
+<br>
+<br>
+Attendance Managers:  new information regarding student groups and using batch attendance (page 10):
+<li>
+<a href="http://gradebooksupport.dadeschools.net/pdf/Attendance/AttMgr_Ref_Guide-pinn8.pdf" target="_blank"> NEW!!  Attendance Manager's Reference Guide</a> - updated 04/10/2012 <FONT COLOR="#FF0000"></FONT>
+</li>
+<br>
+<br>
+</ul>
+</h4>-->
+<p>Access to the M-DCPS electronic Gradebook is contingent upon the appropriate use of the system, pursuant to the <a href="http://techsupport.dadeschools.net/data_security/Network_Security_Standards_2012.pdf" target="_blank">Network Security Standards</a> and <a href="http://www.neola.com/miamidade-fl/search/policies/po7540.04.htm" target="_blank">Staff Network and Internet Acceptable Use and Safety Policy</a>.  M-DCPS reserves the right to monitor Gradebook use, and if inappropriate use (or any use inconsistent with the intended access) or access of the Gradebook by a non-authorized individual is found to occur, access will be immediately revoked; violators will be subject to disciplinary action. Please note that users will be held responsible for activities performed utilizing their user-id(s).</p></p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+					<button id="doNotShowDialog" class="btn btn-link" onclick="SetDoNotShow();return false;" type="button">Have read the message, please don't show it next time.</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+            
+	<div id="Lightbox"></div>
+	
+
+        </section>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+initialize();//]]>
+</script>
+</form>
+
+	<script>
+		(function ($) {
+            
+    function handleWidgets(container) {
+    				container.find('[data-role="widget"]').each(function (index, element) {
+    					const $element = $(element);
+    					if (typeof $element.data("ftwidget") !== "undefined")
+    						return;
+    
+    					const widgetName = $element.data("widget").toLowerCase();
+    					if (typeof $element[widgetName] === "undefined") {
+    						console.error(`The widget ${widgetName} was not found.`);
+    						return;
+    					}
+    
+    					const options = {
+    						urlBase: "https://gradebook.dadeschools.net/Pinnacle/Gradebook/",
+    						apiUrlBase: "https://gradebook.dadeschools.net/Pinnacle/SIS/Api/Gradebook",
+    						currentUrl: "https://gradebook.dadeschools.net/Pinnacle/Gradebook/InternetViewer/GradeReport.aspx",
+    						personId: parseInt('1842644')
+    					};
+    
+    					const data = $element.data();
+    					if (Object.keys(data).length !== 0) {
+    						options.data = {};
+    						for (let property in data) {
+    							if (!data.hasOwnProperty(property))
+    								continue;
+    
+    							if (property === "data")
+    								continue;
+    
+    							if (property.indexOf("data") !== 0)
+    								continue;
+    
+    							const newPropertyName = property[4].toLowerCase() + property.substring(5);
+    							options.data[newPropertyName] = data[property];
+    						}
+    					}
+    
+    					$element[widgetName](options);
+    				});
+    			}
+            
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip();
+				$('[data-toggle="popover"]').popover();
+
+				$("[data-toggle=clear]")
+					.on("click", function (event) {
+						var targetSelector = $(event.target).data("target");
+						var $target = $(targetSelector);
+						$target.val("");
+						$.post(rootPath + "common/Impersonation.ashx/ClearImpersonation")
+							.done(function () {
+								document.location.href = "Default.aspx";
+							});
+					});
+
+				$("[data-toggle=advanced]").on("click", function (event) { onAdvancedSearch(event); });
+
+				$("[data-collapse]").iconSwitcher();
+
+				
+				
+                handleWidgets($("body"));
+			});
+		})(jQuery);
+
+	</script>
+</body>
+</html>
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'LCLPNOMGEDPBEPLOCNAGMIIIHOFPAOBEBFHDLGKFIMKBDCNNNMKKKCEPLCIBBANHIJBBAMPOAAMLFKEFEHCAHLCEAAHEGFDBCFADBNJNIKBNGCCLDCCBOLDMPMHOALLC',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr0710902810aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/;'+'';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;'+';';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>

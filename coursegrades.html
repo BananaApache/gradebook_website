@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="ctl00_ctl00_Head1">
+	<link rel="shortcut icon" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Images/favicon.png" />
+
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+	<meta name="description" content="The student and parent portal for the Wazzle Gradebook." />
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="The administration and management pages for the Wazzle Gradebook." />
+	
+	<script src="https://kit.fontawesome.com/65a259d37d.js"></script>
+
+	<link href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/bundles/css?v=aHKSZqqhUX0E1bhLiAvLDGskCUW7qrsKegRM2xvHCBM1" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Styles/Base.css?v=17.6.22194.3" />
+	<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Styles/TabBar.css?v=17.6.22194.3" />
+	<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Styles/Main.css?v=17.6.22194.3" />
+	<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Styles/Form.css?v=17.6.22194.3" />
+	<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Styles/Header.css?v=17.6.22194.3" />
+	<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Styles/Nav.css?v=17.6.22194.3" />
+	<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Styles/Dialog.css?v=17.6.22194.3" />
+	<link rel="stylesheet" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/InternetViewer/InternetViewer.css?v=17.6.22194.3">
+
+
+	<link rel="stylesheet" type="text/css" href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/InternetViewer/IVReports.css?v=17.6.22194.3" />
+
+	<link href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/InternetViewer/AssignmentGrid.css" rel="stylesheet" />
+
+	<style>
+		.optWrapper .options .opt label {
+			font-weight: normal;
+		}
+
+		.SumoSelect>.CaptionCont>span {
+			display: unset;
+		}
+	</style>
+	<title>
+		Assignments
+	</title>
+</head>
+
+<body>
+
+	<div id="withGrade">
+		<div class="aspNetHidden">
+			<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+				value="/wEPDwUKLTUxNjI5Mjc5Mg8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAmYPZBYCAgEPZBYCAgEPZBYEZg8WAh4Fc3R5bGUFGWJhY2tncm91bmQtY29sb3I6I2ZmZmZmZjtkAgEPDxYCHgdWaXNpYmxlaGRkZD3utbV3GkHuXTbJe1nwJv3BPOdI" />
+		</div>
+	
+		<script type="text/javascript">
+			//<![CDATA[
+			var PageIdPrefix = 'ctl00_ctl00_ContentPlaceHolder_';
+			var PageContentIdPrefix = 'ctl00_ctl00_ContentPlaceHolder_ContentPane_'; //]]>
+		</script>
+	
+		<div class="aspNetHidden">
+	
+			<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="105D578B" />
+			<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+				value="/wEdAAP69SbophWrNt1E3yei7xjNtebAYtBK+g9NUDmf8g8/ivHVLV9dlQchjB1VdJfRe4Mana5tIZmqrubehQmKqxjhFl1IqQ==" />
+		</div>
+		<input name="ctl00$ctl00$uxStudentId" type="hidden" id="ctl00_ctl00_uxStudentId" value="1312590" />
+
+	
+		<style>
+			#header h1,
+			.button-menu i,
+			.refresh-button i,
+			#HeaderRow a:not(.btn) {
+				color: #555;
+			}
+	
+			#logoRow h1 {
+				line-height: 50px;
+			}
+	
+			.side-bar {
+				height: calc(100vh - 50px);
+				top: 50px;
+			}
+	
+			#Main {
+				padding-top: 50px;
+			}
+	
+			.TopBar {
+				height: 50px;
+			}
+	
+			.logoRow,
+			#header {
+				background-color: #ffffff;
+			}
+	
+			.org-branding img {
+				height: 50px;
+			}
+	
+			@media only screen and (max-width: 767px) {
+				#header #logoRow img {
+					height: 50px;
+				}
+	
+				#header {
+					height: 100px;
+				}
+	
+				#header,
+				.side-bar {
+					-webkit-transform: translateY(0);
+					-ms-transform: translateY(0);
+					transform: translateY(0);
+					-webkit-transition: all .25s ease-in-out;
+					-moz-transition: all .25s ease-in-out;
+					-ms-transition: all .25s ease-in-out;
+					-o-transition: all .25s ease-in-out;
+					transition: all .25s ease-in-out;
+				}
+	
+				#header.logo-hidden,
+				.side-bar.logo-hidden {
+					-webkit-transform: translateY(-50px);
+					-ms-transform: translateY(-50px);
+					transform: translateY(-50px);
+					transition: all .25s ease-in-out;
+				}
+	
+				.logo-hidden img {
+					visibility: hidden;
+				}
+	
+				.side-bar {
+					top: 100px;
+				}
+	
+				.side-bar.show:not(.logo-hidden) {
+					height: calc(100vh - 100px);
+					transition: all .25s ease-in-out;
+				}
+	
+				.side-bar.always-float {
+					height: calc(100vh - 100px);
+				}
+	
+				.side-bar.always-float.logo-hidden {
+					height: calc(100vh - 50px);
+				}
+	
+				#Main {
+					padding-top: 100px;
+				}
+			}
+		</style>
+	
+		<header id="header" data-mobile="false" class="" aria-hidden="false">
+			<div id="logoRow" class="text-center visible-xs-block">
+	
+				<img class="center-block" src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Branding/DadeHeaderLogo.png" alt="Miami-Dade County Public Schools" />
+	
+			</div>
+	
+			<div id="ctl00_ctl00_PageHeader_headerBar" class="TopBar" style="background-color:#ffffff;">
+	
+				<a href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/" class="org-branding hidden-xs">
+					<img src="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Branding/DadeHeaderLogo.png" alt="Miami-Dade County Public Schools" />
+				</a>
+	
+				<div class="TopLoginHeader">
+					<table id="headerTable" class="hidden-xs">
+						<tr id="HeaderRow">
+						</tr>
+					</table>
+	
+				</div>
+			</div>
+	
+		</header>
+	
+		<div class="modal" id="uxSearchDialog" tabindex="-1" role="dialog" aria-labelledby="uxSearchTitle">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<i class="fa fa-times"></i>
+						</button>
+						<h4 class="modal-title" id="uxSearchTitle">Advanced Teacher Search</h4>
+					</div>
+					<div class="modal-body">
+						<div class="searchparams">
+							<div class="row">
+								<div class="form-group col-xs-12 col-sm-4">
+									<input class="form-control" id="uxSearchDialog_LastName" type="text"
+										placeholder="Last name..." aria-label="Last Name" />
+								</div>
+	
+								<div class="form-group col-xs-12 col-sm-4">
+									<input class="form-control" id="uxSearchDialog_FirstName" type="text"
+										placeholder="First name..." aria-label="First Name" />
+								</div>
+	
+								<div class="form-group col-xs-12 col-sm-4">
+									<select id="uxSchoolList" class="form-control" aria-label="Schools"></select>
+								</div>
+							</div>
+						</div>
+						<div class="searchResults list-group" id="uxSearchResult">
+							<div id="uxInstruction" style="line-height: 17em; height: 100%; text-align: center;">Start
+								typing in the above text boxes to begin searching. </div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<section id="Main" class="">
+			<div id="sideBar" class="side-bar" aria-hidden="false">
+				<div class="list-group menu-list">
+	
+					<div class="user-info">
+						<div class="media-left">
+							<div class="round-person-photo"
+								style="background-image: url('https://gradebook.dadeschools.net/Pinnacle/Gradebook/Images/NoPhoto.png');">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">
+								<span>
+									<strong id="student">Daniel Li</strong>
+								</span>
+								<br />
+								<small id="id">0382370@students.dadeschools.net</small>
+							</h4>
+						</div>
+					</div>
+	
+					<section class="">
+						<a role="button" class="list-group-item list-group-item-heading"
+							>
+							<i class="fa fa-lg fa-fw fa-home"></i>
+	
+	
+							Home
+	
+	
+						</a>
+	
+					</section>
+					<section class="">
+						<a role="button" class="list-group-item list-group-item-heading" href="#">
+							<i class="fa fa-lg fa-fw fa-search"></i>
+	
+	
+							Student Details
+	
+	
+						</a>
+	
+						<div id="f12355190dd64dc79c2640f3f7df23d4">
+	
+							<a class="list-group-item "
+								>Missing
+								&amp; Upcoming Assignments</a>
+							<a class="list-group-item "
+								href="/output.html">Grades</a>
+							<a class="list-group-item "
+								>Attendance</a>
+							<a class="list-group-item "
+								>Miami-Dade
+								Paperless Interim</a>
+							<a class="list-group-item "
+								>Notifications</a>
+						</div>
+					</section>
+					<section class="">
+						<a role="button" class="list-group-item list-group-item-heading"
+							>
+							<i class="fa fa-lg fa-fw fa-cog"></i>
+	
+	
+							Options
+	
+	
+						</a>
+	
+						<div id="1ad4e2418bb14c329977e0e481178422">
+	
+							<a class="list-group-item " >My
+								Profile</a>
+						</div>
+					</section>
+					<section class="">
+						<a role="button" class="list-group-item list-group-item-heading"
+							href="https://gradebook.dadeschools.net/Pinnacle/Gradebook/Logon.aspx?Action=Logout">
+							<i class="fa fa-lg fa-fw fa-sign-out"></i>
+	
+	
+							Sign out
+	
+	
+						</a>
+	
+					</section>
+					<div class="list-group-item footer">
+						<div>Last login: 1/25/2023 3:19:08 PM</div>
+						<div>Wazzle Gradebook</div>
+						<div>Copyright 2016-2021 Wazzle Solutions, LLC. </div>
+						<div>All rights reserved.</div>
+						<div>
+							<img style="transform: scale(0.75)" src="https://gradebook.dadeschools/Pinnacle/Gradebook/Images/CompanyLogo.png"
+								alt="Wazzle Solutions" />
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div>
+				<input name="ctl00$ctl00$ContentPlaceHolder$uxStudentId" type="hidden"
+					id="ctl00_ctl00_ContentPlaceHolder_uxStudentId" value="1312590" />
+				<div id="Content">
+	
+					<div class="page">
+						<ol class="breadcrumb">
+							<li>
+								<a>Main</a>
+							</li>
+							<li>
+								<a >Grades</a>
+							</li>
+							<li class="active">Assignments</li>
+						</ol>
+						<div id="ContentHeader">
+							<div>
+								<div class="letter" id="letter" 
+									title="Period Grade" data-toggle="tooltip" data-placement="bottom">
+									<div id="grade">
+	
+	
+										<span id="percent"></span>
+									</div>
+								</div>
+	
+								<div>
+									<h1 id="course">
+	
+										Advanced Placement Calculus AB
+	
+										<span class="period">02</span>
+									</h1>
+									<h2>
+										<a href="mailto:945997@dadeschools.net" title="945997@dadeschools.net"
+											class="mailto" target="_blank" aria-label="Email the teacher, Leon"
+											id="teacher"></a>
+									</h2>
+									<h2 id="quarter">1st 9-Weeks</h2>
+								</div>
+							</div>
+							<ul class="mtabs">
+								<li class="active">Assignments</li>
+								<li>
+									<a >Attendance</a>
+								</li>
+								<li>
+									<a >Narrative</a>
+								</li>
+							</ul>
+						</div>
+						<div id="ContentMain">
+	
+							<div class="heading">
+								Categories
+							</div>
+							<table class="grid" id="Categories">
+								<tbody>
+	
+									<tr>
+										<td class="icon">
+											<svg version="1.1" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+												<g stroke="#FFF" style="stroke-width:1px">
+													<path
+														d="M17.5,17.5L3.74671109562589,7.50765071102795A17,17,0,0,0,0.5,17.5,z"
+														fill="#2E7EC0" />
+													<path
+														d="M17.5,17.5L34.5,17.5A17,17,0,0,0,3.74671109562589,7.50765071102795,z"
+														fill="#D8D8D8" />
+													<path
+														d="M17.5,17.5L22.7532889043741,33.6679607770176A17,17,0,0,0,34.5,17.5,z"
+														fill="#D8D8D8" />
+													<path
+														d="M17.5,17.5L0.5,17.5A17,17,0,0,0,22.7532889043741,33.6679607770176,z"
+														fill="#D8D8D8" />
+												</g>
+											</svg>
+										</td>
+										<td class="description">
+	
+											Homework
+	
+											<div class="numeric">
+												<span class="points">840</span>
+												<span class="sep">/</span>
+												<span class="text-muted">900</span>
+											</div>
+	
+											<span class="percent">10% of grade</span>
+	
+										</td>
+										<td class="letter">
+	
+											<div class="letter" style="color:#007F00;background-color:#E6F2E6">
+												<div>
+													<div>
+	
+														A
+	
+														<span>93%</span>
+													</div>
+												</div>
+											</div>
+	
+										</td>
+									</tr>
+	
+									<tr>
+										<td class="icon">
+											<svg version="1.1" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+												<g stroke="#FFF" style="stroke-width:1px">
+													<path
+														d="M17.5,17.5L3.74671109562589,7.50765071102795A17,17,0,0,0,0.5,17.5,z"
+														fill="#D8D8D8" />
+													<path
+														d="M17.5,17.5L34.5,17.5A17,17,0,0,0,3.74671109562589,7.50765071102795,z"
+														fill="#2E7EC0" />
+													<path
+														d="M17.5,17.5L22.7532889043741,33.6679607770176A17,17,0,0,0,34.5,17.5,z"
+														fill="#D8D8D8" />
+													<path
+														d="M17.5,17.5L0.5,17.5A17,17,0,0,0,22.7532889043741,33.6679607770176,z"
+														fill="#D8D8D8" />
+												</g>
+											</svg>
+										</td>
+										<td class="description">
+	
+											Test
+	
+											<div class="numeric">
+												<span class="points">174</span>
+												<span class="sep">/</span>
+												<span class="text-muted">200</span>
+											</div>
+	
+											<span class="percent">40% of grade</span>
+	
+										</td>
+										<td class="letter">
+	
+											<div class="letter" style="color:#3F7F00;background-color:#ECF2E6">
+												<div>
+													<div>
+	
+														B
+	
+														<span>87%</span>
+													</div>
+												</div>
+											</div>
+	
+										</td>
+									</tr>
+	
+									<tr>
+										<td class="icon">
+											<svg version="1.1" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+												<g stroke="#FFF" style="stroke-width:1px">
+													<path
+														d="M17.5,17.5L3.74671109562589,7.50765071102795A17,17,0,0,0,0.5,17.5,z"
+														fill="#D8D8D8" />
+													<path
+														d="M17.5,17.5L34.5,17.5A17,17,0,0,0,3.74671109562589,7.50765071102795,z"
+														fill="#D8D8D8" />
+													<path
+														d="M17.5,17.5L22.7532889043741,33.6679607770176A17,17,0,0,0,34.5,17.5,z"
+														fill="#2E7EC0" />
+													<path
+														d="M17.5,17.5L0.5,17.5A17,17,0,0,0,22.7532889043741,33.6679607770176,z"
+														fill="#D8D8D8" />
+												</g>
+											</svg>
+										</td>
+										<td class="description">
+	
+											Participation
+	
+											<div class="numeric">
+												<span class="points">260</span>
+												<span class="sep">/</span>
+												<span class="text-muted">300</span>
+											</div>
+	
+											<span class="percent">20% of grade</span>
+	
+										</td>
+										<td class="letter">
+	
+											<div class="letter" style="color:#3F7F00;background-color:#ECF2E6">
+												<div>
+													<div>
+	
+														B
+	
+														<span>87%</span>
+													</div>
+												</div>
+											</div>
+	
+										</td>
+									</tr>
+	
+									<tr>
+										<td class="icon">
+											<svg version="1.1" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+												<g stroke="#FFF" style="stroke-width:1px">
+													<path
+														d="M17.5,17.5L3.74671109562589,7.50765071102795A17,17,0,0,0,0.5,17.5,z"
+														fill="#D8D8D8" />
+													<path
+														d="M17.5,17.5L34.5,17.5A17,17,0,0,0,3.74671109562589,7.50765071102795,z"
+														fill="#D8D8D8" />
+													<path
+														d="M17.5,17.5L22.7532889043741,33.6679607770176A17,17,0,0,0,34.5,17.5,z"
+														fill="#D8D8D8" />
+													<path
+														d="M17.5,17.5L0.5,17.5A17,17,0,0,0,22.7532889043741,33.6679607770176,z"
+														fill="#2E7EC0" />
+												</g>
+											</svg>
+										</td>
+										<td class="description">
+	
+											Quiz
+	
+											<div class="numeric">
+												<span class="points">180</span>
+												<span class="sep">/</span>
+												<span class="text-muted">200</span>
+											</div>
+	
+											<span class="percent">30% of grade</span>
+	
+										</td>
+										<td class="letter">
+	
+											<div class="letter" style="color:#007F00;background-color:#E6F2E6">
+												<div>
+													<div>
+	
+														A
+	
+														<span>90%</span>
+													</div>
+												</div>
+											</div>
+	
+										</td>
+									</tr>
+	
+								</tbody>
+							</table>
+	
+							<div class="heading">
+								Assignments
+							</div>
+	
+							<table class="grid" id="Assignments">
+								<tbody>
+	
+									<tr class="assignment" data-assignment="194264951" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-10-20T00:00:00"
+												aria-label="Due on October 20">
+												<span>Oct</span>
+												20
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">Participation (Graph paper)</div>
+	
+											<div class="category">Participation</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">85</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#3F7F00;background-color:#ECF2E6">
+												<div>
+													<div>
+														B
+														<span class="percent">85%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+									<tr class="assignment" data-assignment="194253504" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-10-18T00:00:00"
+												aria-label="Due on October 18">
+												<span>Oct</span>
+												18
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">Test 1.2</div>
+	
+											<div class="category">Test</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">84</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#3F7F00;background-color:#ECF2E6">
+												<div>
+													<div>
+														B
+														<span class="percent">84%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+	
+	
+									<tr class="assignment" data-assignment="194253042" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-10-13T00:00:00"
+												aria-label="Due on October 13">
+												<span>Oct</span>
+												13
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">Quiz 1.2</div>
+	
+											<div class="category">Quiz</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">85</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#3F7F00;background-color:#ECF2E6">
+												<div>
+													<div>
+														B
+														<span class="percent">85%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+									<tr class="assignment" data-assignment="194264704" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-10-10T00:00:00"
+												aria-label="Due on October 10">
+												<span>Oct</span>
+												10
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">HW 9</div>
+	
+											<div class="category">Homework</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">40</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#7F0000;background-color:#F2E6E6">
+												<div>
+													<div>
+														F
+														<span class="percent">40%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+	
+									<tr class="assignment" data-assignment="194264889" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-10-09T00:00:00"
+												aria-label="Due on October 9">
+												<span>Oct</span>
+												9
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">HW 6</div>
+	
+											<div class="category">Homework</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">100</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#007F00;background-color:#E6F2E6">
+												<div>
+													<div>
+														A
+														<span class="percent">100%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+	
+									<tr class="assignment" data-assignment="194264916" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-10-09T00:00:00"
+												aria-label="Due on October 9">
+												<span>Oct</span>
+												9
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">HW 7</div>
+	
+											<div class="category">Homework</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">100</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#007F00;background-color:#E6F2E6">
+												<div>
+													<div>
+														A
+														<span class="percent">100%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+									
+	
+									<tr class="assignment" data-assignment="194264731" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-10-09T00:00:00"
+												aria-label="Due on October 9">
+												<span>Oct</span>
+												9
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">HW 8</div>
+	
+											<div class="category">Homework</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">100</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#007F00;background-color:#E6F2E6">
+												<div>
+													<div>
+														A
+														<span class="percent">100%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+									
+	
+									<tr class="assignment" data-assignment="192974134" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-10-04T00:00:00"
+												aria-label="Due on October 4">
+												<span>Oct</span>
+												4
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">Test 1.1</div>
+	
+											<div class="category">Test</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">90</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#007F00;background-color:#E6F2E6">
+												<div>
+													<div>
+														A
+														<span class="percent">90%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+									
+	
+									<tr class="assignment" data-assignment="194264767" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-09-21T00:00:00"
+												aria-label="Due on September 21">
+												<span>Sep</span>
+												21
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">HW 5</div>
+	
+											<div class="category">Homework</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">100</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#007F00;background-color:#E6F2E6">
+												<div>
+													<div>
+														A
+														<span class="percent">100%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+									
+	
+									<tr class="assignment" data-assignment="194264832" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-09-20T00:00:00"
+												aria-label="Due on September 20">
+												<span>Sep</span>
+												20
+	
+												<span class="a">absent</span>
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">HW 4</div>
+	
+											<div class="category">Homework</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">100</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#007F00;background-color:#E6F2E6">
+												<div>
+													<div>
+														A
+														<span class="percent">100%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+									
+	
+									<tr class="assignment" data-assignment="194264850" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-09-19T00:00:00"
+												aria-label="Due on September 19">
+												<span>Sep</span>
+												19
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">HW 3</div>
+	
+											<div class="category">Homework</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">100</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#007F00;background-color:#E6F2E6">
+												<div>
+													<div>
+														A
+														<span class="percent">100%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+									
+	
+									<tr class="assignment" data-assignment="191738838" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-09-08T00:00:00"
+												aria-label="Due on September 8">
+												<span>Sep</span>
+												8
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">Participation</div>
+	
+											<div class="category">Participation</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">85</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#3F7F00;background-color:#ECF2E6">
+												<div>
+													<div>
+														B
+														<span class="percent">85%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+									
+	
+									<tr class="assignment" data-assignment="191513272" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-09-06T00:00:00"
+												aria-label="Due on September 6">
+												<span>Sep</span>
+												6
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">Quiz 1.1</div>
+	
+											<div class="category">Quiz</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">95</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#007F00;background-color:#E6F2E6">
+												<div>
+													<div>
+														A
+														<span class="percent">95%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+									
+	
+									<tr class="assignment" data-assignment="191738345" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-09-04T00:00:00"
+												aria-label="Due on September 4">
+												<span>Sep</span>
+												4
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">HW2</div>
+	
+											<div class="category">Homework</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">100</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#007F00;background-color:#E6F2E6">
+												<div>
+													<div>
+														A
+														<span class="percent">100%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+									
+	
+									<tr class="assignment" data-assignment="190892490" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-08-30T00:00:00"
+												aria-label="Due on August 30">
+												<span>Aug</span>
+												30
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">HW 1</div>
+	
+											<div class="category">Homework</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">100</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#007F00;background-color:#E6F2E6">
+												<div>
+													<div>
+														A
+														<span class="percent">100%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+									
+	
+									<tr class="assignment" data-assignment="190575138" data-enrollment="39604219"
+										data-scale="56318">
+										<td class="icon-date">
+											<time class="date-due" datetime="2022-08-26T00:00:00"
+												aria-label="Due on August 26">
+												<span>Aug</span>
+												26
+	
+											</time>
+										</td>
+										<td class="description">
+											<div class="title">Participation</div>
+	
+											<div class="category">Participation</div>
+										</td>
+	
+										<td class="numeric">
+											<div class="numeric">
+												<span class="points">90</span>
+												<span class="max">max 100</span>
+											</div>
+										</td>
+										<td class="letter">
+											<div class="letter" style="color:#007F00;background-color:#E6F2E6">
+												<div>
+													<div>
+														A
+														<span class="percent">90%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+	
+									
+								</tbody>
+							</table>
+	
+						</div>
+					</div>
+	
+					<p class="report-time">
+						This report was generated on 1/25/2023 at 4:46 PM
+					</p>
+				</div>
+			</div>
+			<div aria-labelledby="uxMessageDialogLabel" class="modal" id="uxMessageDialog" role="dialog" tabindex="-1">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h1 class="modal-title" id="uxMessageDialogLabel">Message Board</h1>
+						</div>
+						<div class="modal-body">
+							<p>
+							
+							<p>
+								Access to the M-DCPS electronic Gradebook is contingent upon the appropriate use of the
+								system, pursuant to the
+								<a href="http://techsupport.dadeschools.net/data_security/Network_Security_Standards_2012.pdf"
+									target="_blank">Network Security Standards</a>
+								and
+								<a href="http://www.neola.com/miamidade-fl/search/policies/po7540.04.htm"
+									target="_blank">Staff Network and Internet Acceptable Use and Safety Policy</a>
+								. M-DCPS reserves the right to monitor Gradebook use, and if inappropriate use (or any use
+								inconsistent with the intended access) or access of the Gradebook by a non-authorized
+								individual is found to occur, access will be immediately revoked; violators will be subject
+								to disciplinary action. Please note that users will be held responsible for activities
+								performed utilizing their user-id(s).
+							</p>
+							</p>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+							<button id="doNotShowDialog" class="btn btn-link" onclick="SetDoNotShow();return false;"
+								type="button">Have read the message, please don't show it next time.</button>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div id="Lightbox"></div>
+	
+			<div id="scale-background"></div>
+			<div id="scales">
+	
+				<div class="scale" id="scale-56318">
+					<div class="pull-right letter qgctrl-letter" style="color:#007F00;background-color:#E6F2E6"
+						data-letter="A">
+						<div>
+							<div>A</div>
+						</div>
+					</div>
+					<div class="pull-right letter qgctrl-letter" style="color:#3F7F00;background-color:#ECF2E6"
+						data-letter="B">
+						<div>
+							<div>B</div>
+						</div>
+					</div>
+					<div class="pull-right letter qgctrl-letter" style="color:#7F7F00;background-color:#F2F2E6"
+						data-letter="C">
+						<div>
+							<div>C</div>
+						</div>
+					</div>
+					<div class="pull-right letter qgctrl-letter" style="color:#7F3F00;background-color:#F2ECE6"
+						data-letter="D">
+						<div>
+							<div>D</div>
+						</div>
+					</div>
+					<div class="pull-right letter qgctrl-letter" style="color:#7F0000;background-color:#F2E6E6"
+						data-letter="F">
+						<div>
+							<div>F</div>
+						</div>
+					</div>
+					<div class="pull-right letter qgctrl-letter" style="color:#7F0000;background-color:#F2E6E6"
+						data-letter="Z">
+						<div>
+							<div>Z</div>
+						</div>
+					</div>
+					<div class="pull-right letter qgctrl-letter" style="color:#007F00;background-color:#E6F2E6"
+						data-letter="X">
+						<div>
+							<div>X</div>
+						</div>
+					</div>
+					<div class="pull-right letter qgctrl-letter" style="color:#444;background-color:#DDD" data-letter="I">
+						<div>
+							<div>I</div>
+						</div>
+					</div>
+					<div class="pull-right letter qgctrl-letter" style="color:#444;background-color:#DDD" data-letter="NC">
+						<div>
+							<div>NC</div>
+						</div>
+					</div>
+					<div class="pull-right letter qgctrl-letter" style="color:#444;background-color:#DDD" data-letter="NG">
+						<div>
+							<div>NG</div>
+						</div>
+					</div>
+					<div class="pull-right letter qgctrl-letter" style="" data-letter=" ">
+						<div>
+							<div></div>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+	
+		</section>
+	</div>
+	
+	<script>
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+
+			const grade = urlParams.get('grade')
+			const quarter = urlParams.get('quarter')
+			const student = urlParams.get('student')
+			const id = urlParams.get('id')
+			const course = urlParams.get('course')
+			const teacher = urlParams.get('teacher')
+
+			document.querySelector("#grade").innerHTML = grade[0]
+			console.log(grade.slice(1));
+			document.querySelector("#grade").innerHTML += "<span class='percent'>" + grade.slice(1) + "</span>"
+			document.querySelector("#quarter").innerHTML = quarter
+			document.querySelector("#student").innerHTML = student
+			document.querySelector("#id").innerHTML = id
+			document.querySelector("#course").innerHTML = course
+			document.querySelector("#teacher").innerHTML = teacher
+
+			const Alettercolor = "#007F00";
+			const Abackgroundcolor = "#DAF2DA";
+			const Blettercolor = "#3F7F00";
+			const Bbackgroundcolor = "#E6F2DA";
+			const Clettercolor = "#7F7F00";
+			const Cbackgroundcolor = "#F2F2DA";
+			const Dlettercolor = "#7F3F00";
+			const Dbackgroundcolor = "#F2E6DA";
+			const Flettercolor = "#7F0000";
+			const Fbackgroundcolor = "#F2DADA";
+
+			if (grade[0] == 'A') {
+				document.querySelector("#letter").style = `margin-left:1rem; color:${Alettercolor};background-color:${Abackgroundcolor}`
+			}
+			else if (grade[0] == 'B') {
+				document.querySelector("#letter").style = `margin-left:1rem; color:${Blettercolor};background-color:${Bbackgroundcolor}`
+			}
+			else if (grade[0] == 'C') {
+				document.querySelector("#letter").style = `margin-left:1rem; color:${Clettercolor};background-color:${Cbackgroundcolor}`
+			}
+			else if (grade[0] == 'D') {
+				document.querySelector("#letter").style = `margin-left:1rem; color:${Dlettercolor};background-color:${Dbackgroundcolor}`
+			}
+			else if (grade[0] == 'F') {
+				document.querySelector("#letter").style = `margin-left:1rem; color:${Flettercolor};background-color:${Fbackgroundcolor}`
+			}
+
+		</script>
+</body>
+
+</html>

