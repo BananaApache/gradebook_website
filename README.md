@@ -1,8 +1,8 @@
 
-<h1 align="center">Make your own gradebook website</h1>
+<h1 align="center">Make your own dadeschools gradebook website</h1>
 
 - [If you're on a Mac, click here](#installation-if-youre-on-a-mac)
-- [If you're on windows, click here](#installation-if-youre-on-windows)
+- [If you're on Windows, click here](#installation-if-youre-on-windows)
 
 <h2 font-size="50px;">Installation if you're on a Mac:</h2>
 
@@ -80,7 +80,7 @@
 <img src="https://raw.githubusercontent.com/BananaApache/images_for_readme/master/windows_step_3-1.png" width="600px">
 
 ##### Then copy and paste this command and press Enter
-`cd %userprofile% && cd Downloads\gradebook_website-master\gradebook_website-master && node`
+`cd %userprofile% && cd Downloads\gradebook_website-master\gradebook_website-master && node bruh.js`
 
 <img src="https://raw.githubusercontent.com/BananaApache/images_for_readme/master/windows_step_3-2.png" width="600px">
 
