@@ -8,8 +8,7 @@
 
 <h3>Step 1: Download these files to your computer<h3>
 
-<img src="https://raw.githubusercontent.com/BananaApache/images_for_readme/master/step_1-1.png" width="600px">
-<img src="https://raw.githubusercontent.com/BananaApache/images_for_readme/master/step_1-2.png" width="600px">
+<h4>Click <a href="https://github.com/BananaApache/gradebook_website/archive/refs/heads/master.zip">here</a> to download the required files</h4>
 <h4 style="font-weight: 300;">Unzip them too</h4>
 <img src="https://raw.githubusercontent.com/BananaApache/images_for_readme/master/step_1-3.png" width="600px">
 
@@ -60,8 +59,7 @@
 
 <h3>Step 1: Download these files to your computer<h3>
 
-<img src="https://raw.githubusercontent.com/BananaApache/images_for_readme/master/step_1-1.png" width="600px">
-<img src="https://raw.githubusercontent.com/BananaApache/images_for_readme/master/step_1-2.png" width="600px">
+<h4>Click <a href="https://github.com/BananaApache/gradebook_website/archive/refs/heads/master.zip">here</a> to download the required files</h4>
 <h4 style="font-weight: 300;">Extract them to the default location</h4>
 <img src="https://raw.githubusercontent.com/BananaApache/images_for_readme/master/windows_step_1-1.png" width="600px">
 <img src="https://raw.githubusercontent.com/BananaApache/images_for_readme/master/windows_step_1-2.png" width="600px">
